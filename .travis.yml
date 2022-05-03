@@ -1,0 +1,25 @@
+language: java
+
+sudo: false
+
+dist: trusty
+
+cache:
+  directories:
+  - "$HOME/.gradle"
+
+os:
+  - linux
+
+jdk:
+  - openjdk12
+
+addons:
+  sonarcloud:
+    organization: "codetripper-github"
+
+script:
+  - ./gradlew sonarqube
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
