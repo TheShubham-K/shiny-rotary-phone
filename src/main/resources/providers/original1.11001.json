@@ -1,0 +1,30 @@
+{
+  "id": 11001,
+  "name": "MailGun",
+  "comment": "Used for transaction mails",
+  "email": [
+    "help@mailgun.com"
+  ],
+  "contact": [
+    "2342664564",
+    "123213213"
+  ],
+  "type": "EMAIL",
+  "timeOutInMs": 3000,
+  "active": true,
+  "from": {
+    "id": "test@example.com",
+    "name": "Mailgun Tester"
+  },
+  "primary": false,
+  "endpoints": {
+    "base": "",
+    "sendUri": "messages"
+  },
+  "from": "Mailgun Sandbox ",
+  "authType": "basic",
+  "basicAuthentication": {
+    "userId": "api",
+    "password": ""
+  }
+}

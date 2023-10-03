@@ -1,0 +1,30 @@
+{
+  "id": 11002,
+  "name": "SendGrid",
+  "comment": "Used for testing mails",
+  "email": [
+    "help@sendgrid.com"
+  ],
+  "contact": [
+    "2342664564",
+    "123213213"
+  ],
+  "type": "EMAIL",
+  "timeOutInMs": 3000,
+  "active": true,
+  "primary": false,
+  "from": {
+    "id": "test@example.com",
+    "name": "SendGrid Tester"
+  },
+  "endpoints": {
+    "base": "https://api.sendgrid.com/v3/",
+    "sendUri": "mail/send",
+    "statusUri": "/sms/sendgrid/status"
+  },
+  "authType": "bearer",
+  "bearerAuthentication": {
+    "apiKey": "",
+    "authUrl": "http://localhost:9999/sms/sendgrid"
+  }
+}
